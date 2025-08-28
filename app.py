@@ -5,7 +5,7 @@ from typing import List, Union, Optional
 from fastapi import FastAPI, HTTPException, Header
 from pydantic import BaseModel
 
-APP = FastAPI(title="OpenManus API", version="0.1.0")
+app = FastAPI(title="OpenManus API", version="0.1.0")
 
 OPENMANUS_DIR = os.getenv("OPENMANUS_DIR", "/app/OpenManus")
 API_KEY = os.getenv("API_KEY", "")  # opcional, defina no Coolify p/ proteger
